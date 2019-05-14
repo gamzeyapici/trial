@@ -1,0 +1,22 @@
+{
+  "name": "trial",
+  "version": "1.0.0",
+  "description": "descp.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/worlfee/trial.git"
+  },
+  "author": "gamze yapici",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/worlfee/trial/issues"
+  },
+  "homepage": "https://github.com/worlfee/trial#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
