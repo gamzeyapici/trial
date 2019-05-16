@@ -3,14 +3,8 @@ const app = express();
 const path = require('path');
 const port = 3000;
 
-
-
 app.get('/', function(req, res){
-
     res.send('listening..');
-    
-
-
 });
 
 
