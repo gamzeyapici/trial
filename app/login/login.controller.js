@@ -3,17 +3,19 @@
 
     function UsersController($scope, $http, $state, $window) {
 
-
         $scope.login = {};
 
-      
-
-        $scope.submitSignIn = function(form) {
-
+        $scope.list = [];
+        $scope.text = '';
+        $scope.password = '';
+        $scope.submit = function (form) {
+            if ($scope.text) {
+                $scope.list.push($scope.text,$scope.password);
+                $scope.text = '';
+                $scope.password = '';
+            }
             debugger;
-
-            debugger;
-        }
+        };
 
         // $scope.users = [];
         // $scope.selectedIndex = null;
