@@ -3,24 +3,36 @@
 
     function UsersController($scope, $http, $state, $window) {
 
-        $scope.users = [];
-        $scope.selectedIndex = null;
-        $scope.selectedUser = null;
 
-        $scope.selectedPerson = function (user, index) {
-            $scope.selectedIndex = index;
-            $scope.selectedUser = user;            
-        };
+        $scope.login = {};
 
+      
 
-        getUser().then(function (response) {
-            $scope.users = response.data;
-        }).catch(function (err) {            
-        })
+        $scope.submitSignIn = function(form) {
 
-        function getUser() {
-            return $http.get("https://jsonplaceholder.typicode.com/users")
+            debugger;
+
+            debugger;
         }
+
+        // $scope.users = [];
+        // $scope.selectedIndex = null;
+        // $scope.selectedUser = null;
+
+        // $scope.selectedPerson = function (user, index) {
+        //     $scope.selectedIndex = index;
+        //     $scope.selectedUser = user;            
+        // };
+
+
+        // getUser().then(function (response) {
+        //     $scope.users = response.data;
+        // }).catch(function (err) {            
+        // })
+
+        // function getUser() {
+        //     return $http.get("https://jsonplaceholder.typicode.com/users")
+        // }
     }
 
     angular.module('g-app')
