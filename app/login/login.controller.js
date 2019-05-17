@@ -13,6 +13,7 @@
                 $scope.list.push($scope.text,$scope.password);
                 $scope.text = '';
                 $scope.password = '';
+                debugger;
             }
             debugger;
         };

@@ -8,17 +8,22 @@
         .component('product', {
             template: "<div>{{product}}</div>, <div>product</div>",
             controller: function ($scope) {
-                
+
                 $scope.product = "productComponentElement";
-                
+
             }
         })
         .component('home', {
             template: "<div>{{home}}</div>, <div>home</div>",
             controller: function ($scope) {
-                
+
                 $scope.home = "homeComponentElement";
-                
+
             }
-        })
+        }).config(['$stateProvider', function ($stateProvider) {
+            $stateProvider.state('home', {
+                url: '/home',
+                template: '<home></home>'
+            });
+        }]);
 })();
