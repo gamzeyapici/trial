@@ -44,7 +44,7 @@
             controller: ['$scope', '$http', '$window', UsersController]
         })
         .config(['$stateProvider', function ($stateProvider) {
-            $stateProvider.state('users', {
+            $stateProvider.state('login', {
                 url: '/',
                 template: '<login></login>'
             });

@@ -1,9 +1,11 @@
 body {
-    background: url('http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg') fixed;
+    background: url('https://cdn.magdeleine.co/wp-content/uploads/2018/06/black-and-white-clouds-fog-1096958-860x573.jpg') fixed;
     background-size: cover;
     padding: 0;
     margin: 0;
+    color: #FFFFFF;
 }
+
 
 .wrap {
     width: 100%;

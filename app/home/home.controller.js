@@ -5,18 +5,18 @@
 
         debugger;
 
-        $scope.users = [];
+        $scope.products = [];
 
        
-        getUser().then(function (response) {
-            $scope.users = response.data;
+        getProducts().then(function (response) {
+            $scope.products = response.data;
             debugger;
         }).catch(function (err) {
             debugger;
         })
 
-        function getUser() {
-            return $http.get("https://jsonplaceholder.typicode.com/users")
+        function getProducts() {
+            return $http.get("app/json/products.json")
         }
         
 

@@ -1,0 +1,17 @@
+<nav class="navbar navbar-dark bg-dark justify-content-between">
+    <span style="padding-left: 20px;">
+        <a class="navbar-brand btn btn-secondary" ng-click="visible=!visible;" href="#">Menu</a>
+    </span>
+    <span class="form-inline">
+        <img src="https://img.icons8.com/office/40/000000/lifecycle.png">
+    </span>
+</nav>
+
+<div ng-class="{'is-visible':visible}" class="menu">
+    <ul>
+        <li> <a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Log out</a></li>
+    </ul>
+</div>
