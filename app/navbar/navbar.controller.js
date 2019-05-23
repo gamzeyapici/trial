@@ -14,7 +14,6 @@
         })
         .config(['$stateProvider', function ($stateProvider) {
             $stateProvider.state('navbar', {
-                url: '/navbar',
                 template: '<navbar></navbar>'
             });
         }]);
