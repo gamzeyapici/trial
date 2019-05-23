@@ -4,6 +4,20 @@
     function HomeController($scope, $http, $state, $window) {
 
         debugger;
+
+        $scope.users = [];
+
+       
+        getUser().then(function (response) {
+            $scope.users = response.data;
+            debugger;
+        }).catch(function (err) {
+            debugger;
+        })
+
+        function getUser() {
+            return $http.get("https://jsonplaceholder.typicode.com/users")
+        }
         
 
     }
