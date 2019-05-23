@@ -13,17 +13,4 @@
 
             }
         })
-        .component('home', {
-            template: "<div>{{home}}</div>, <div>home</div>",
-            controller: function ($scope) {
-
-                $scope.home = "homeComponentElement";
-
-            }
-        }).config(['$stateProvider', function ($stateProvider) {
-            $stateProvider.state('home', {
-                url: '/home',
-                template: '<home></home>'
-            });
-        }]);
 })();
