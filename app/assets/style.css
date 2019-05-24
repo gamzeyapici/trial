@@ -1,9 +1,9 @@
 body {
-    background: url('https://cdn.magdeleine.co/wp-content/uploads/2018/06/black-and-white-clouds-fog-1096958-860x573.jpg') fixed;
+    background: url('../assets/background.jpg') fixed;
     background-size: cover;
     padding: 0;
     margin: 0;
-    color: #FFFFFF;
+    color: black;
 }
 
 
