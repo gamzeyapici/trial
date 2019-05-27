@@ -5,18 +5,18 @@
 
         debugger;
 
-        $scope.products = [];
+        $scope.types = [];
 
        
-        getProducts().then(function (response) {
-            $scope.products = response.data;
+        getTypes().then(function (response) {
+            $scope.types = response.data;
             debugger;
         }).catch(function (err) {
             debugger;
         })
 
-        function getProducts() {
-            return $http.get("app/json/products.json")
+        function getTypes() {
+            return $http.get("app/json/types.json")
         }
         
 

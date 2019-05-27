@@ -1,9 +1,9 @@
 body {
-    background: url('../assets/background.jpg') fixed;
+    background: url('../assets/black-background.jpg') fixed;
     background-size: cover;
     padding: 0;
     margin: 0;
-    color: black;
+    color: #FFFFFF;
 }
 
 
@@ -154,4 +154,8 @@ form.login a:hover {
 
 .pass-reset input[type="submit"]:hover {
     transition: background-color 0.5s ease;
+}
+
+table tr td {
+    color: #FFFFFF;
 }
